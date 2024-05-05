@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cloud_forest:block/glisten_lichen"
+  }
+}

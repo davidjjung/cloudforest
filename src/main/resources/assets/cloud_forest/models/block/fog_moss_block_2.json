@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "cloud_forest:block/fog_moss_block",
+    "side": "cloud_forest:block/fog_moss_block",
+    "top": "cloud_forest:block/fog_moss_block"
+  }
+}

@@ -1,0 +1,7 @@
+// 1.20.1	2024-05-05T22:04:09.6018327	Tags for minecraft:worldgen/biome mod id cloud_forest
+d09928d1c9ac754fc5246068bf7f8103007fdf2b data/minecraft/tags/worldgen/biome/has_closer_water_fog.json
+d09928d1c9ac754fc5246068bf7f8103007fdf2b data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_jungle.json
+2cbcd4436c1b0b7f28e917a0c4ee812901db4284 data/minecraft/tags/worldgen/biome/increased_fire_burnout.json
+d09928d1c9ac754fc5246068bf7f8103007fdf2b data/minecraft/tags/worldgen/biome/is_forest.json
+d09928d1c9ac754fc5246068bf7f8103007fdf2b data/minecraft/tags/worldgen/biome/is_overworld.json
+d09928d1c9ac754fc5246068bf7f8103007fdf2b data/minecraft/tags/worldgen/biome/spawns_cold_variant_frogs.json

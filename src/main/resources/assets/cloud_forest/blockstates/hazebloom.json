@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "fruiting=true": {
+      "model": "cloud_forest:block/hazebloom"
+    },
+    "fruiting=false": {
+      "model": "cloud_forest:block/hazebloom_empty"
+    }
+  }
+}
