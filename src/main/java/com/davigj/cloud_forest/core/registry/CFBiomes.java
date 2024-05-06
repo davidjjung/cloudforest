@@ -16,11 +16,14 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.level.biome.*;
 import net.minecraft.world.level.levelgen.carver.ConfiguredWorldCarver;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraftforge.fml.common.Mod;
 
 import javax.annotation.Nullable;
 
 import java.util.List;
 
+
+@Mod.EventBusSubscriber(modid = CloudForest.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CFBiomes {
     public static final ResourceKey<Biome> CLOUD_FOREST = createKey("cloud_forest");
 
