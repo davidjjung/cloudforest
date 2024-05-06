@@ -2,6 +2,7 @@ package com.davigj.cloud_forest.core.registry;
 
 import com.davigj.cloud_forest.core.CloudForest;
 import com.davigj.cloud_forest.core.other.CFGeneration;
+import com.teamabnormals.blueprint.common.world.modification.chunk.modifiers.ChunkGeneratorModifier;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
@@ -45,8 +46,7 @@ public class CFBiomes {
         MobSpawnSettings.Builder spawns = new MobSpawnSettings.Builder();
         spawns.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.FROG, 10, 2, 5));
         BiomeDefaultFeatures.commonSpawns(spawns);
-
-        return biome(false, 0.27F, 0.85F, 9539946, 8882547, 5403055, 1250099, 13293534, spawns, generation, null);
+        return biome(false, 0.26F, 0.82F, 9539946, 8882547, 5403055, 1250099, 13293534, spawns, generation, null);
     }
 
     private static Biome biome(boolean precipitation, float temperature, float downfall, int grassColor, int foliageColor, int waterColor, int waterFogColor, int fogColor, MobSpawnSettings.Builder spawns, BiomeGenerationSettings.Builder generation, @Nullable Music music) {

@@ -21,9 +21,9 @@ public class CFBiomeTagsProvider extends BiomeTagsProvider {
         this.tag(BiomeTags.IS_OVERWORLD).add(CLOUD_FOREST);
         this.tag(BiomeTags.IS_FOREST).add(CLOUD_FOREST);
         this.tag(BiomeTags.SPAWNS_COLD_VARIANT_FROGS).add(CLOUD_FOREST);
-        this.tag(BiomeTags.HAS_RUINED_PORTAL_JUNGLE).add(CLOUD_FOREST);
+        this.tag(BiomeTags.HAS_RUINED_PORTAL_STANDARD).add(CLOUD_FOREST);
         this.tag(BiomeTags.HAS_CLOSER_WATER_FOG).add(CLOUD_FOREST);
         this.tag(BiomeTags.INCREASED_FIRE_BURNOUT).add(CLOUD_FOREST);
-        this.tag(BiomeTags.INCREASED_FIRE_BURNOUT).add(CLOUD_FOREST);
+        this.tag(BiomeTags.HAS_TRAIL_RUINS).add(CLOUD_FOREST);
     }
 }
