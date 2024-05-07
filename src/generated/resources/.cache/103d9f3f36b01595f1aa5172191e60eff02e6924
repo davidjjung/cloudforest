@@ -1,3 +1,7 @@
-// 1.20.1	2024-05-06T21:22:44.0635387	Registries
+// 1.20.1	2024-05-06T23:55:29.2327322	Registries
 979600f10e49f29ba6d89408c933e1a49e06039f data/cloud_forest/blueprint/modded_biome_slices/cloud.json
-cff46cb87651fc2af2d3ec851d68b0ad02b08ffc data/cloud_forest/worldgen/biome/cloud_forest.json
+d4b4cbc10903f2a619a45dbccd3b8843b66a8789 data/cloud_forest/worldgen/biome/cloud_forest.json
+ca08065428cc8b7609beb3dec032f172d5629b7f data/cloud_forest/worldgen/configured_feature/dewey_spruce.json
+7bf1a24dcf9bda8191374f70a0acfa32383ca0af data/cloud_forest/worldgen/configured_feature/trees_cloud_forest.json
+e87ba6d204071a3664798257cb5af97d870dec80 data/cloud_forest/worldgen/placed_feature/dewey_spruce.json
+3bc157edb7d8708ca1f219611610c14284e35672 data/cloud_forest/worldgen/placed_feature/trees_cloud_forest.json

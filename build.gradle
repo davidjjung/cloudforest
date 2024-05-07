@@ -82,6 +82,8 @@ dependencies {
      implementation fg.deobf("maven.modrinth:fog-looks-modern-now:Xi8khBA6")
      implementation fg.deobf("maven.modrinth:natures-compass:Og40jCNX")
      implementation fg.deobf("maven.modrinth:autumnity:dNSKgdoR")
+     implementation fg.deobf("maven.modrinth:collective:MPpjuvwT")
+     implementation fg.deobf("maven.modrinth:biome-spawn-point:USEni5nA")
 
     compileOnly fg.deobf("mezz.jei:jei-${project.minecraft}-common-api:${project.jei}")
     compileOnly fg.deobf("mezz.jei:jei-${project.minecraft}-forge-api:${project.jei}")

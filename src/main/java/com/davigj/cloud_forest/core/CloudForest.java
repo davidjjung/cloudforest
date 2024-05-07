@@ -6,6 +6,7 @@ import com.davigj.cloud_forest.core.data.server.CFBiomeTagsProvider;
 import com.davigj.cloud_forest.core.data.server.CFDatapackBuiltinEntriesProvider;
 import com.davigj.cloud_forest.core.other.CFClientCompat;
 import com.davigj.cloud_forest.core.registry.CFBlocks;
+import com.davigj.cloud_forest.core.registry.CFFeatures;
 import com.davigj.cloud_forest.core.registry.CFItems;
 import com.davigj.cloud_forest.core.registry.CFParticleTypes;
 import com.teamabnormals.blueprint.core.util.registry.RegistryHelper;
@@ -39,6 +40,7 @@ public class CloudForest {
 
 		REGISTRY_HELPER.register(bus);
         CFParticleTypes.PARTICLE_TYPES.register(bus);
+        CFFeatures.FEATURES.register(bus);
 
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
             CFItems.buildCreativeTabContents();

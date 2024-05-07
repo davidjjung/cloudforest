@@ -9,8 +9,8 @@
   "downfall": 0.82,
   "effects": {
     "fog_color": 13293534,
-    "foliage_color": 8882547,
-    "grass_color": 9539946,
+    "foliage_color": 5335622,
+    "grass_color": 3959631,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
@@ -19,7 +19,7 @@
     },
     "sky_color": 8233983,
     "water_color": 5403055,
-    "water_fog_color": 1250099
+    "water_fog_color": 1054750
   },
   "features": [
     [],
@@ -78,7 +78,8 @@
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin"
+      "minecraft:patch_pumpkin",
+      "cloud_forest:trees_cloud_forest"
     ],
     [
       "minecraft:freeze_top_layer"
