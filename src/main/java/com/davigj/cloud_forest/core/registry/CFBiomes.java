@@ -47,22 +47,17 @@ public class CFBiomes {
         MobSpawnSettings.Builder spawns = new MobSpawnSettings.Builder();
         spawns.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.FROG, 10, 2, 5));
         BiomeDefaultFeatures.commonSpawns(spawns);
-        return biome(false, 0.26F, 0.82F, 4350030, 5335622,
+        return biome(false, 0.26F, 0.82F, 13293534, 6849135, 5335622,
                 5403055, 1054750, 13293534, spawns, generation, null);
     }
 
-    private static Biome biome(boolean precipitation, float temperature, float downfall, int grassColor, int foliageColor, int waterColor, int waterFogColor, int fogColor, MobSpawnSettings.Builder spawns, BiomeGenerationSettings.Builder generation, @Nullable Music music) {
+    private static Biome biome(boolean precipitation, float temperature, float downfall, int skyColor, int grassColor, int foliageColor, int waterColor, int waterFogColor, int fogColor, MobSpawnSettings.Builder spawns, BiomeGenerationSettings.Builder generation, @Nullable Music music) {
         return (new Biome.BiomeBuilder()).hasPrecipitation(precipitation).temperature(temperature).downfall(downfall)
                 .specialEffects((new BiomeSpecialEffects.Builder())
                         .grassColorOverride(grassColor).foliageColorOverride(foliageColor)
                         .waterColor(waterColor).waterFogColor(waterFogColor).fogColor(fogColor)
-                        .skyColor(calculateSkyColor(temperature)).ambientMoodSound(
+                        .skyColor(skyColor).ambientMoodSound(
                                 AmbientMoodSettings.LEGACY_CAVE_SETTINGS).backgroundMusic(music)
                         .build()).mobSpawnSettings(spawns.build()).generationSettings(generation.build()).build();
-    }
-
-    private static int calculateSkyColor(float temperature) {
-        float clampedTemp = Mth.clamp(temperature / 3.0F, -1.0F, 1.0F);
-        return Mth.hsvToRgb(0.62222224F - clampedTemp * 0.05F, 0.5F + clampedTemp * 0.1F, 1.0F);
     }
 }

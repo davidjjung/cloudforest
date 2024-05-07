@@ -10,14 +10,14 @@
   "effects": {
     "fog_color": 13293534,
     "foliage_color": 5335622,
-    "grass_color": 3959631,
+    "grass_color": 6849135,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000
     },
-    "sky_color": 8233983,
+    "sky_color": 13293534,
     "water_color": 5403055,
     "water_fog_color": 1054750
   },
@@ -74,7 +74,6 @@
     [
       "minecraft:glow_lichen",
       "minecraft:patch_large_fern",
-      "minecraft:patch_grass_savanna",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
@@ -82,7 +81,8 @@
       "cloud_forest:trees_cloud_forest"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "cloud_forest:fog_moss_boulder"
     ]
   ],
   "has_precipitation": false,

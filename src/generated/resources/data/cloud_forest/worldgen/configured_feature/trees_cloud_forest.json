@@ -5,7 +5,11 @@
     "features": [
       {
         "chance": 0.2,
-        "feature": "minecraft:birch_checked"
+        "feature": "minecraft:super_birch_bees"
+      },
+      {
+        "chance": 0.4,
+        "feature": "minecraft:cherry_checked"
       }
     ]
   }

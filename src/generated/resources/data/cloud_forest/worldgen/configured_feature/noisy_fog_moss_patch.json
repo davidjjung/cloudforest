@@ -1,0 +1,32 @@
+{
+  "type": "cloud_forest:noisy_fog_moss_patch",
+  "config": {
+    "half_height": 1,
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_inclusive": 3,
+        "min_inclusive": 2
+      }
+    },
+    "state_provider": {
+      "fallback": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "cloud_forest:fog_moss_block",
+          "Properties": {
+            "layers": "4"
+          }
+        }
+      },
+      "rules": []
+    },
+    "target": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:dirt",
+        "minecraft:clay"
+      ]
+    }
+  }
+}
