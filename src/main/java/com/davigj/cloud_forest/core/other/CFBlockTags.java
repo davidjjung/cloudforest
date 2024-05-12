@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.Block;
 
 public class CFBlockTags {
     public static final TagKey<Block> EPIPHYTE_PLACEABLE = blockTag("epiphyte_placeable");
+    public static final TagKey<Block> FOG_MOSS_SUPPORTS = blockTag("fog_moss_supports");
 
     private static TagKey<Block> blockTag(String name) {
         return TagUtil.blockTag(CloudForest.MOD_ID, name);

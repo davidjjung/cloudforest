@@ -4,12 +4,16 @@
     "default": "cloud_forest:dewey_spruce",
     "features": [
       {
-        "chance": 0.2,
-        "feature": "minecraft:super_birch_bees"
+        "chance": 0.1,
+        "feature": "cloud_forest:flowering_dewey_spruce"
       },
       {
-        "chance": 0.4,
-        "feature": "minecraft:cherry_checked"
+        "chance": 0.35,
+        "feature": "cloud_forest:cloud_laurel_branching"
+      },
+      {
+        "chance": 0.35,
+        "feature": "cloud_forest:tall_dark_oak"
       }
     ]
   }

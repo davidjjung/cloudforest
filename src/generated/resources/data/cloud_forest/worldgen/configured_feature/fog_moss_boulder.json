@@ -1,0 +1,11 @@
+{
+  "type": "cloud_forest:fog_moss_boulder",
+  "config": {
+    "state": {
+      "Name": "cloud_forest:fog_moss_block",
+      "Properties": {
+        "layers": "4"
+      }
+    }
+  }
+}

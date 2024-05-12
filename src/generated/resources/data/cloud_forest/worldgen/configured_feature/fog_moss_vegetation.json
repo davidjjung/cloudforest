@@ -1,0 +1,46 @@
+{
+  "type": "cloud_forest:fog_moss_vegetation",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "minecraft:lily_of_the_valley"
+          },
+          "weight": 4
+        },
+        {
+          "data": {
+            "Name": "minecraft:grass"
+          },
+          "weight": 14
+        },
+        {
+          "data": {
+            "Name": "cloud_forest:hazebloom",
+            "Properties": {
+              "fruiting": "2"
+            }
+          },
+          "weight": 7
+        },
+        {
+          "data": {
+            "Name": "cloud_forest:fog_moss_carpet",
+            "Properties": {
+              "powered": "false"
+            }
+          },
+          "weight": 15
+        },
+        {
+          "data": {
+            "Name": "minecraft:air"
+          },
+          "weight": 50
+        }
+      ]
+    }
+  }
+}

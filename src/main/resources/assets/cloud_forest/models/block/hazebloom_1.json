@@ -1,0 +1,7 @@
+{
+  "render_type": "cutout",
+  "parent": "block/cross",
+  "textures": {
+    "cross": "cloud_forest:block/hazebloom_1"
+  }
+}

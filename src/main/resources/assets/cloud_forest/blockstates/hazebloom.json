@@ -1,10 +1,13 @@
 {
   "variants": {
-    "fruiting=true": {
-      "model": "cloud_forest:block/hazebloom"
+    "fruiting=0": {
+      "model": "cloud_forest:block/hazebloom_0"
     },
-    "fruiting=false": {
-      "model": "cloud_forest:block/hazebloom_empty"
+    "fruiting=1": {
+      "model": "cloud_forest:block/hazebloom_1"
+    },
+    "fruiting=2": {
+      "model": "cloud_forest:block/hazebloom_2"
     }
   }
 }

@@ -15,6 +15,8 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraftforge.common.ForgeHooks;
 
+import static com.davigj.cloud_forest.common.block.FogMossBlock.LAYERS;
+
 public class FogMossCarpetBlock extends CarpetBlock {
     public static final BooleanProperty POWERED;
 
@@ -24,24 +26,28 @@ public class FogMossCarpetBlock extends CarpetBlock {
     }
 
     public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource random) {
-        double spread = 0.6;
-        double $$4 = (double) pos.getX() + 0.5 + (random.nextDouble() - 0.5) * spread;
-        double $$5 = (double) pos.getY() + 0.5 + (random.nextDouble() - 0.5) * spread;
-        double $$6 = (double) pos.getZ() + 0.5 + (random.nextDouble() - 0.5) * spread;
-        level.addParticle(ParticleTypes.END_ROD, $$4, $$5, $$6, 0.0, 0.0, 0.0);
+//        double spread = 0.6;
+//        double $$4 = (double) pos.getX() + 0.5 + (random.nextDouble() - 0.5) * spread;
+//        double $$5 = (double) pos.getY() + 0.5 + (random.nextDouble() - 0.5) * spread;
+//        double $$6 = (double) pos.getZ() + 0.5 + (random.nextDouble() - 0.5) * spread;
+//        level.addParticle(ParticleTypes.END_ROD, $$4, $$5, $$6, 0.0, 0.0, 0.0);
     }
 
-    public boolean isRandomlyTicking(BlockState state) {
-        return !state.getValue(POWERED);
-    }
-
-    public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-        level.setBlock(pos, (BlockState) CFBlocks.FOG_MOSS_BLOCK.get().defaultBlockState(), 2);
-        BlockPos above = pos.above();
-        if (level.getBlockState(above).isAir() && random.nextBoolean()) {
-            level.setBlockAndUpdate(above, state);
-        }
-    }
+//    public boolean isRandomlyTicking(BlockState state) {
+//        return !state.getValue(POWERED);
+//    }
+//
+//    public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+//        if (state.getValue(POWERED)) return;
+//        level.setBlock(pos, (BlockState) CFBlocks.FOG_MOSS_BLOCK.get().defaultBlockState()
+//                .setValue(LAYERS, 4), 2);
+////                .setValue(LAYERS, (random.nextInt(2) + 1) * 2), 2);
+////        if (level.getBlockState(pos).getValue(LAYERS) != 4) return;
+//        BlockPos above = pos.above();
+//        if (level.getBlockState(above).isAir() && random.nextBoolean()) {
+//            level.setBlockAndUpdate(above, state);
+//        }
+//    }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {

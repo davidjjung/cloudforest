@@ -79,7 +79,7 @@ dependencies {
     minecraft "net.minecraftforge:forge:${project.minecraft}-${project.forge}"
     implementation fg.deobf("com.teamabnormals:blueprint:${project.minecraft}-${project.blueprint}")
     // for Modrinth dependencies: make sure to go to the website and use the URL for the modid, and the version number according to the "Versions" tab
-     implementation fg.deobf("maven.modrinth:fog-looks-modern-now:Xi8khBA6")
+    implementation fg.deobf("maven.modrinth:fog-looks-modern-now:Xi8khBA6")
      implementation fg.deobf("maven.modrinth:natures-compass:Og40jCNX")
      implementation fg.deobf("maven.modrinth:autumnity:dNSKgdoR")
      implementation fg.deobf("maven.modrinth:collective:MPpjuvwT")

@@ -20,7 +20,8 @@ public class CFGeneration {
         BiomeDefaultFeatures.addDefaultMushrooms(generation);
         BiomeDefaultFeatures.addDefaultExtraVegetation(generation);
         generation.addFeature(Decoration.VEGETAL_DECORATION, TREES_CLOUD_FOREST);
-//        generation.addFeature(Decoration.TOP_LAYER_MODIFICATION, NOISY_FOG_MOSS_PATCH);
-        generation.addFeature(Decoration.TOP_LAYER_MODIFICATION, FOG_MOSS_BOULDER);
+        generation.addFeature(Decoration.VEGETAL_DECORATION, HAZEBLOOM);
+        generation.addFeature(Decoration.VEGETAL_DECORATION, FOG_MOSS_DECO_PATCH);
+//        generation.addFeature(Decoration.TOP_LAYER_MODIFICATION, FOG_MOSS_BOULDER);
     }
 }

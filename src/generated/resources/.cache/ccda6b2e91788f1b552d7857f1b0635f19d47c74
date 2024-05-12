@@ -1,0 +1,18 @@
+// 1.20.1	2024-05-08T22:49:24.1802109	Tags for minecraft:block mod id cloud_forest
+1eef840b8164c4fe4c7c91c1c2f8fadddbc920c0 data/cloud_forest/tags/blocks/epiphyte_placeable.json
+c846e88e4ce84f3603e86737bd4a3e77e91287f8 data/minecraft/tags/blocks/azalea_grows_on.json
+c846e88e4ce84f3603e86737bd4a3e77e91287f8 data/minecraft/tags/blocks/bamboo_plantable_on.json
+c846e88e4ce84f3603e86737bd4a3e77e91287f8 data/minecraft/tags/blocks/big_dripleaf_placeable.json
+c846e88e4ce84f3603e86737bd4a3e77e91287f8 data/minecraft/tags/blocks/dead_bush_may_place_on.json
+c846e88e4ce84f3603e86737bd4a3e77e91287f8 data/minecraft/tags/blocks/dirt.json
+c846e88e4ce84f3603e86737bd4a3e77e91287f8 data/minecraft/tags/blocks/enderman_holdable.json
+25e7fd24ed6c2833eb7fb0487e4b724b99f58bea data/minecraft/tags/blocks/flower_pots.json
+ceee56b59e7ba41ff286564163d21f92290b0c52 data/minecraft/tags/blocks/leaves.json
+c6ce75eec7aec8c815bea9b6bb085629033a6982 data/minecraft/tags/blocks/mineable/hoe.json
+c846e88e4ce84f3603e86737bd4a3e77e91287f8 data/minecraft/tags/blocks/moss_replaceable.json
+c846e88e4ce84f3603e86737bd4a3e77e91287f8 data/minecraft/tags/blocks/nether_carver_replaceables.json
+c846e88e4ce84f3603e86737bd4a3e77e91287f8 data/minecraft/tags/blocks/sculk_replaceable.json
+c846e88e4ce84f3603e86737bd4a3e77e91287f8 data/minecraft/tags/blocks/small_dripleaf_placeable.json
+bad559c3f3ac7bd41f7c75e56afad40570c9a859 data/minecraft/tags/blocks/small_flowers.json
+c846e88e4ce84f3603e86737bd4a3e77e91287f8 data/minecraft/tags/blocks/sniffer_diggable_block.json
+c846e88e4ce84f3603e86737bd4a3e77e91287f8 data/minecraft/tags/blocks/sniffer_egg_hatch_boost.json

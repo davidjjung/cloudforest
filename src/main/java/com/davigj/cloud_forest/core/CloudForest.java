@@ -4,6 +4,8 @@ import com.davigj.cloud_forest.core.data.client.CFBlockStateProvider;
 import com.davigj.cloud_forest.core.data.client.CFLangProvider;
 import com.davigj.cloud_forest.core.data.server.CFBiomeTagsProvider;
 import com.davigj.cloud_forest.core.data.server.CFDatapackBuiltinEntriesProvider;
+import com.davigj.cloud_forest.core.data.server.tags.CFBlockTagsProvider;
+import com.davigj.cloud_forest.core.data.server.tags.CFEntityTypeTagsProvider;
 import com.davigj.cloud_forest.core.other.CFClientCompat;
 import com.davigj.cloud_forest.core.registry.CFBlocks;
 import com.davigj.cloud_forest.core.registry.CFFeatures;
@@ -41,6 +43,7 @@ public class CloudForest {
 		REGISTRY_HELPER.register(bus);
         CFParticleTypes.PARTICLE_TYPES.register(bus);
         CFFeatures.FEATURES.register(bus);
+        CFFeatures.TREE_DECORATOR_TYPES.register(bus);
 
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
             CFItems.buildCreativeTabContents();
@@ -74,7 +77,12 @@ public class CloudForest {
         boolean server = event.includeServer();
         CFDatapackBuiltinEntriesProvider datapackEntries = new CFDatapackBuiltinEntriesProvider(output, provider);
         generator.addProvider(server, datapackEntries);
+
+        CFBlockTagsProvider blockTags = new CFBlockTagsProvider(output, provider, helper);
+        generator.addProvider(server, blockTags);
+
         provider = datapackEntries.getRegistryProvider();
+        generator.addProvider(server, new CFEntityTypeTagsProvider(output, provider, helper));
         generator.addProvider(server, new CFBiomeTagsProvider(output, provider, helper));
 
         boolean client = event.includeClient();

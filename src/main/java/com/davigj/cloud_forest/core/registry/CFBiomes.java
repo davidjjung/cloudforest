@@ -47,7 +47,7 @@ public class CFBiomes {
         MobSpawnSettings.Builder spawns = new MobSpawnSettings.Builder();
         spawns.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.FROG, 10, 2, 5));
         BiomeDefaultFeatures.commonSpawns(spawns);
-        return biome(false, 0.26F, 0.82F, 13293534, 6849135, 5335622,
+        return biome(false, 0.26F, 0.82F, 13293534, 7578511, 6525570,
                 5403055, 1054750, 13293534, spawns, generation, null);
     }
 

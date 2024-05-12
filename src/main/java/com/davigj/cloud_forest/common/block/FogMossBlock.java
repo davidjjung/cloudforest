@@ -90,10 +90,6 @@ public class FogMossBlock extends Block implements BonemealableBlock {
         }
     }
 
-    public boolean isRandomlyTicking(BlockState state) {
-        return state.getValue(LAYERS) < 4;
-    }
-
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(LAYERS);
@@ -106,8 +102,8 @@ public class FogMossBlock extends Block implements BonemealableBlock {
 
     @Override
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-        this.checkNeighbors(level, pos);
-        this.deflate(level, pos, state);
+//        this.checkNeighbors(level, pos);
+//        this.deflate(level, pos, state);
     }
 
     @Override
